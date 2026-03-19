@@ -44,7 +44,7 @@ void LinkedQueue<T>::copy(const LinkedQueue<T>& copyObj) {
     // TODO
         Node* current = copyObj.head;
     while (current != nullptr) {
-        enqueue(current->data);
+        enqueue(current->value);
         current = current->next;
     }
 }
