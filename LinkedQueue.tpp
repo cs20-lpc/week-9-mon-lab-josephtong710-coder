@@ -53,7 +53,7 @@ template <typename T>
 void LinkedQueue<T>::dequeue() {
     // TODO
         if (isEmpty()) {
-            throw std::runtime_error("Queue is empty");
+            throw string("error, queue is empty, cannot dequeue");
         }
     Node* temp = head;
     head = head->next;
@@ -79,7 +79,7 @@ template <typename T>
 T LinkedQueue<T>::front() const {
     // TODO
     if (isEmpty()) {
-        throw std::runtime_error("Queue is empty");
+       throw string("error, queue is empty, cannot access the front");
     }
     return head->value;
 }
