@@ -28,6 +28,9 @@ LinkedQueue<T>::~LinkedQueue() {
 template <typename T>
 T LinkedQueue<T>::back() const {
     // TODO
+    if (isEmpty()) {
+        throw string("error, queue is empty, cannot access the back");
+    }
     return this->last->value;
 }
 
