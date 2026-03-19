@@ -1,7 +1,7 @@
 template <typename T>
 LinkedQueue<T>::LinkedQueue() {
     // TODO
-    head = nullptr;
+    this->head = nullptr;
     this->last = nullptr;
     this->length = 0;
 }
